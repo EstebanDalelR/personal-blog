@@ -1,0 +1,113 @@
+# The Lazy Programmer Guide to VSCode Extensions
+
+Soon, I'll hit a decade of writing software professionally and I gotta say, I've learned a ton. I am an expert at searching online and filtering through StackOverflow answers to know what to copy. I've read hundreds of thousands of line of code, some more times than it's medically safe. One of the most important things I know now is that you are as good as your tools, and here I will show you what works for me after testing a lot and discarding brutally.
+
+I use VSCode as my daily driver. I spend hours and hours looking at it's UI to create value. It is good out of the box but the Marketplace makes this humble text editor a powerful center of operations for a developer.
+
+_Disclaimer_: I develop a VSCode extension, so I also extensively use VSCode Insiders and VSCodium.
+
+## [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+
+_Bruh_
+
+This thing literally does my job. I give it a function signature and it completes it. I give it a prompt and boom, I get the whole thing. It's like magic.
+
+It reads the context of your code, the type of file, and earlier recommendations that you accepted, so the more you use it on a codebase the better it becomes.
+
+Now, you might be wondering about privacy and whatnot, and yes, it _has_ to read your code, and they say that they don't store it for Copilot.
+
+I will say that it is great for repetitive tasks like making yet another API or some basic UI or even tests, but when you have to really code, it falls short. Always read it's recommendations, but let the TAB button be your friend.
+
+Price: 10 USD per month (that I pay _gladly_)
+
+## [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+Ever had a tab vs. spaces conversation? Well, drop it and have everyone install Prettier. It's a great code formatter and works on saving so everyone will commit the code looking just right. It has a lot of settings you can mess around with and extensions created by other people so experiment until you get it right. Or don't and just use the very sensible defaults, which we do.
+
+The caveat is that it is limited to web technologies so the COBOL crowd will be excluded, but if you use VSCode you're probably working on web.
+
+> Note: I'm a tabs person as it saves characters when using a braille-accessible display.
+
+Price: Free
+
+## [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.svg-preview)
+
+This should be something that comes out of the box but isn't. An extension that allows you to view the SVG rendered is required. Pick any. This one is great for checking transparency and colors, but writing SVG is for wizards and witches, edit outside your IDE.
+
+Price: Free
+
+## [Watermelon](https://marketplace.visualstudio.com/items?itemName=WatermelonTools.watermelon-tools&ssr=true)
+
+This one helps me a lot with the non-coding tasks of developing. It has a nice UI that shows me the Pull Requests related to the piece of code I select and allows me to comment on them. The code history in an organized table has saved me more than once.
+
+They have a neat Daily Summary that shows me what I'm procrastinating, or supposed to be doing.
+
+The paid version includes Most Relevant Jira tickets and adds the Open Tasks to the Daily Summary. I heard that they are releasing a Slack integration soon.
+
+## [Git](https://code.visualstudio.com/docs/sourcecontrol/overview)
+
+This one is part of VSCode but it's worth mentioning. It helps you add, commit, pull and push, without leaving your keyboard. I find this to be really important, I quickly close tasks and go about my day.
+
+It is a full git client so you can create branches, checkout and stash, but for more advanced things use a terminal.
+
+## [Mermaid](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
+
+This open source project will make your life much better as it has a stable language for creating diagrams inside Markdown that will display in GitHub and GitLab, so it helps communicate.
+
+It is an addition to the Markdown viewer and will become natural for you to use. It has several diagram types to try out. A diagram saves you hundreds of words, and hours in calls.
+
+## [TODO highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
+
+Ever wanted to skip a task and added a comment to leave the fun to your Future Self? Well, Present Self, thank Past Self because now you can easily find your TODOs, HACKs, FIXMEs and whatever other note you give yourself (or your team!).
+
+This extension is really useful as it allows you to scan a file quickly.
+
+## [DOTENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
+
+This extension is great for working with environment variables. It will highlight the variables in your code and allow you to jump to the definition. It also has a nice UI to edit the variables.
+
+It will make VSCode understand the `.env` file and highlight the variables in it.
+
+## [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+
+This one is cool as it will rename the closing tag when you rename the opening tag. It's a small thing but it saves a lot of time. Stop using `CTRL+D` to select the closing tag and rename it.
+
+It is very smart in selecting the tag, so it will work with JSX and other weird things.
+
+## [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+
+This one is also small, it will create the matching tag with the `/`.
+
+## [Excel Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
+
+Ah, data.
+
+Nothing harder than getting a CSV file and trying to understand it. This extension will allow you to open the file and see it in a table. It will also allow you to copy the data to a spreadsheet.
+
+Some light editing might be in order, but it's a great way to get a quick look at the data.
+
+## [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
+
+This will plain replace Postman. It has a nice UI and allows you to create requests and save them in a collection. It also has a nice UI to edit the request and see the response.
+
+It is a great tool for testing APIs.
+
+## [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+
+Nothing more annoying than your coworkers rejecting your code over a typo. This extension will help you catch those typos before you commit.
+
+It has a nice UI to add words to the dictionary and it will also suggest words when you misspell them.
+
+## [Sort JSON](https://marketplace.visualstudio.com/items?itemName=richie5um2.vscode-sort-json)
+
+This one is for when your OCD itches. Select a JSON and see all the keys in alphabetical order. Helps a lot with nested JSONs and looking for packages on NPM.
+
+## [Format JSON](https://marketplace.visualstudio.com/items?itemName=ClemensPeters.format-json)
+
+Ah, nothing worse than copying a response and seeing it an single line with double quotes. This extension will format the JSON and make it look pretty. That's it.
+
+## Closing Thoughts
+
+I hope you enjoyed this list and that it helps you get the most out of VSCode. We love open source and chose VSCode as it's our go to editor. If you'd like to contribute to making Watermelon a better extension, head over to [Our Repo](https://github.com/watermelontools/watermelon-extension)
+
+I'm sure I missed a lot of extensions, so please share your favorites with us over at [Our Twitter](https://twitter.com/WatermelonTools).

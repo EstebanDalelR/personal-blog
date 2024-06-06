@@ -1,0 +1,38 @@
+# The cool git: Git fetch --prune origin
+
+**TL;DR:** Delete local branches from the remote deleted.
+
+**For humans:** Match the deletion of remote branches.
+
+If you're anything like me and like to keep your commit history clean, you'll want to delete your local branches when that has happened on the remote. As most teams use a centralized repository as source of truth, you probably want your local to match the remote.
+
+Let me walk you through the process:
+You use your log to view the humungous amount of branches you have locally
+
+```shell
+git branch
+```
+
+It should output something like this:
+
+![a lot of branches](/preprune.png)
+
+Now, prune!
+
+```shell
+git fetch --prune origin
+```
+
+You should have deleted a ton of branches, but possibly silent. Check your `log`.
+
+When you have few differences, it will display the process executed:
+
+![prune process](/pruneprocess.png)
+
+And now you have a cleaner local matching the remote.
+
+PS: If you have more than one remote, you can pick one to match, I used `origin` as it's the default.
+
+Well, you now can go faster on your git process with autocomplete, but when you need to do code archaeology, use [Watermelon](https://watermelon.tools), a VSCode extension that gets the historical context of your code to make it easier to understand.
+
+> This blog post was originally released for Watermelon. [Find it on our blog!](https://watermelon.tools/post/the-cool-git-git-prune-remote)
