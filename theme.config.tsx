@@ -13,6 +13,11 @@ const config: DocsThemeConfig = {
   footer: {
     text: "Blog | Esteban Dalel R",
   },
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Blog | EstebanDalelR.co'
+    }
+  }
 };
 
 export default config;
