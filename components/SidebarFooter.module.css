@@ -97,7 +97,8 @@
     font-size: 12px;
   }
 
-  svg {
+  .menuButton svg,
+  .fontButton svg {
     width: 16px;
     height: 16px;
   }
