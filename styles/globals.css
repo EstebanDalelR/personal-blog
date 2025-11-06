@@ -1,0 +1,53 @@
+/* Font Families */
+:root[data-font="default"],
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+:root[data-font="system"] {
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+:root[data-font="dyslexia"] {
+  --font-family: "Comic Sans MS", "Arial", "Verdana", sans-serif;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+  line-height: 1.8;
+}
+
+/* Apply font family to all text */
+:root[data-font] body,
+:root[data-font] article,
+:root[data-font] .nextra-content,
+:root[data-font] p,
+:root[data-font] h1,
+:root[data-font] h2,
+:root[data-font] h3,
+:root[data-font] h4,
+:root[data-font] h5,
+:root[data-font] h6,
+:root[data-font] li,
+:root[data-font] span,
+:root[data-font] div {
+  font-family: var(--font-family) !important;
+}
+
+/* Dyslexia-friendly adjustments */
+:root[data-font="dyslexia"] p,
+:root[data-font="dyslexia"] li {
+  line-height: 1.8;
+}
+
+:root[data-font="dyslexia"] b,
+:root[data-font="dyslexia"] strong {
+  font-weight: 700;
+}
+
+/* Ensure code blocks maintain monospace */
+:root[data-font] code,
+:root[data-font] pre,
+:root[data-font] kbd,
+:root[data-font] samp {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace !important;
+}
