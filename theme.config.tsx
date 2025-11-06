@@ -13,6 +13,10 @@ const config: DocsThemeConfig = {
   footer: {
     text: "Blog | Esteban Dalel R",
   },
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+    toggleButton: true,
+  },
   useNextSeoProps() {
     return {
       titleTemplate: '%s – Blog | EstebanDalelR.co'

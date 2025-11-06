@@ -1,0 +1,105 @@
+.sidebarFooter {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid var(--nextra-border-color, #e5e7eb);
+  background: var(--nextra-bg, #fff);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  max-width: 320px;
+}
+
+.menuButton,
+.fontButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid var(--nextra-border-color, #e5e7eb);
+  border-radius: 6px;
+  background: var(--nextra-bg, #fff);
+  color: var(--nextra-fg, #000);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  flex: 1;
+  justify-content: center;
+}
+
+.menuButton:hover,
+.fontButton:hover {
+  background: var(--nextra-hover-bg, #f3f4f6);
+  border-color: var(--nextra-primary-hue, #3b82f6);
+}
+
+.menuButton:active,
+.fontButton:active {
+  transform: scale(0.98);
+}
+
+.buttonLabel {
+  font-weight: 500;
+}
+
+.fontSwitcher {
+  flex: 1;
+}
+
+/* Dark mode support */
+:root[class~="dark"] .sidebarFooter {
+  border-top-color: #333;
+  background: var(--nextra-bg, #111);
+}
+
+:root[class~="dark"] .menuButton,
+:root[class~="dark"] .fontButton {
+  border-color: #333;
+  background: var(--nextra-bg, #111);
+  color: var(--nextra-fg, #fff);
+}
+
+:root[class~="dark"] .menuButton:hover,
+:root[class~="dark"] .fontButton:hover {
+  background: #222;
+  border-color: var(--nextra-primary-hue, #3b82f6);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .sidebarFooter {
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .menuButton,
+  .fontButton {
+    width: 100%;
+  }
+
+  .buttonLabel {
+    font-size: 13px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .sidebarFooter {
+    padding: 8px;
+  }
+
+  .menuButton,
+  .fontButton {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .menuButton svg,
+  .fontButton svg {
+    width: 16px;
+    height: 16px;
+  }
+}
