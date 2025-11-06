@@ -17,6 +17,14 @@ const config: DocsThemeConfig = {
     return {
       titleTemplate: '%s – Blog | EstebanDalelR.co'
     }
+  },
+  primaryHue: {
+    dark: 40,
+    light: 40
+  },
+  primarySaturation: {
+    dark: 30,
+    light: 30
   }
 };
 
